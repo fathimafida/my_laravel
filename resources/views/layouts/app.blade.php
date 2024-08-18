@@ -13,8 +13,8 @@
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
      <div className="flex space-x-4">
-     <a href="/" className=" hover:text-gray-400 py-5 px-3">Home</a>
-     <a href="/about" className=" hover:text-gray-400  py-5 px-3">About</a>
+     <a href="{{ route('home') }}" className=" {{ request()->routeIs('home') ? 'text-blue-500' : 'text-gray-600' }} py-5 px-3">Home</a>
+     <a href="{{ route('about') }}" className=" {{ request()->routeIs('about') ? 'text-blue-500' : 'text-gray-600' }}  py-5 px-3">About</a>
      </div>
 </div>
 
